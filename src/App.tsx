@@ -56,11 +56,11 @@ export const App = () => {
     // });
   };
 
-  // const clickSubmit = () => {
+  const clickSubmit = () => {
   // window.gtag("event", "prize_get_click", {
   //     variant_name: "ghk_4120_1",
   // });
-  // };
+  };
 
   const clickInteraction = () => {
     // window.gtag("event", "game_interaction", {
@@ -163,7 +163,7 @@ export const App = () => {
             block
             view="primary"
             // href="https://alfa.me/cbpartner"
-            // onClick={clickSubmit}
+            onClick={clickSubmit}
           >
             Забрать подписку бесплатно
           </ButtonMobile>
