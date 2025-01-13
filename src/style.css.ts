@@ -1,5 +1,24 @@
 import { style, globalStyle } from "@vanilla-extract/css";
 
+const smartContainer = style({
+  display: "flex",
+  padding: "1rem",
+  flexDirection: "column",
+  gap: "1rem",
+});
+
+const smartBox = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: ".5rem",
+  borderRadius: "24px",
+  border: "2px solid #F8F8F8",
+  overflow: "hidden",
+  textAlign: "center",
+  paddingBottom: "1rem",
+  backgroundColor: "#F8F8F8",
+});
+
 const container = style({
   display: "flex",
   padding: "1rem",
@@ -26,6 +45,11 @@ const bottomBtnThx = style({
   bottom: 0,
 });
 
+const smartProductsTitle = style({
+  fontSize: "22px",
+  marginBottom: "1rem",
+});
+
 const productsTitle = style({
   display: "flex",
   alignItems: "center",
@@ -34,9 +58,25 @@ const productsTitle = style({
   textAlign: "center",
 });
 
+const smartProducts = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: "1rem",
+});
+
 const products = style({
   display: "flex",
   gap: "1rem",
+});
+
+const smartProduct = style({
+  backgroundColor: "#F2F3F5",
+  borderRadius: "1rem",
+  padding: "1rem",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "0.2rem",
 });
 
 const product = style({
@@ -46,6 +86,12 @@ const product = style({
   display: "flex",
   justifyContent: "space-between",
   gap: "0.2rem",
+});
+
+const smartProductTitle = style({
+  lineHeight: "26px",
+  fontSize: "20px",
+  marginBottom: "0.3rem",
 });
 
 const productTitle = style({
@@ -108,6 +154,16 @@ globalStyle(`${wrapper} > div > div > div:nth-of-type(2) > div`, {
   transform: "scale(2)",
 });
 
+const productText = style({
+  lineHeight: "26px",
+  fontSize: "17px",
+  marginBottom: 0,
+});
+
+const productIcon = style({
+  transform: "scale(1.1)",
+});
+
 export const appSt = {
   bottomBtn,
   bottomBtnThx,
@@ -124,4 +180,12 @@ export const appSt = {
   wrapper,
   giftImage,
   imageWrapper,
+  productText,
+  productIcon,
+  smartContainer,
+  smartBox,
+  smartProducts,
+  smartProductsTitle,
+  smartProduct,
+  smartProductTitle,
 };

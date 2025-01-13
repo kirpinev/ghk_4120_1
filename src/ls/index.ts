@@ -1,5 +1,5 @@
 export const enum LSKeys {
-  ShowThx = "ab_show_thx_reactivation_1",
+  ShowThx = "ab_show_thx_ghk_4120_1",
 }
 
 export interface LSData {
